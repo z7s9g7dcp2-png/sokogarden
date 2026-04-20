@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    tools:context=".PaymentActivity">
 
-<!--    Below is a textView-->
+    <!--    Below is a textView-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,9 +19,7 @@
         android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textColor="#137617"/>
-
-
-<!--    Below is acardvview that holds all our contents-->
+    <!--    Below is acardvview that holds all our contents-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +28,7 @@
         app:cardCornerRadius="15dp"
         android:background="#367">
 
-<!--        Below is a linearlayout-->
+        <!--        Below is a linearlayout-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -35,21 +36,21 @@
             android:padding="12dp"
             android:background="#051232">
 
-<!--            Below is a textview whre the name of the product shall be attached-->
+            <!--            Below is a textview whre the name of the product shall be attached-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtProductName"
+                android:id="@+id/txtProductname"
                 android:text="Product Name"
                 android:textStyle="bold|italic"
                 android:textSize="28sp"
                 android:textColor="#BEBEBE"/>
 
-<!--            Below is an ImageView for the product Image-->
+            <!--            Below is an ImageView for the product Image-->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:id="@+id/imgProduct"
+                android:id="@+id/imageProduct"
                 android:src="@mipmap/ic_launcher"
                 android:scaleType="centerCrop"
                 android:layout_marginTop="10dp"
@@ -57,11 +58,11 @@
                 android:layout_marginLeft="20dp"/>
 
 
-<!--            Below is the textView for the product_cost-->
+            <!--            Below is the textView for the product_cost-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtProductCost"
+                android:id="@+id/txtProductcost"
                 android:text="Kes 1000"
                 android:textSize="30sp"
                 android:layout_marginTop="5dp"
@@ -69,11 +70,11 @@
                 android:textColor="#BEEEEE"
                 android:fontFamily="sans-serif-medium"/>
 
-<!--            Below is an edittext for entering the number-->
+            <!--            Below is an edittext for entering the number-->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/phone"
+                android:id="@+id/Phone"
                 android:hint="Enter Phone NUmber e.g 254723...."
                 android:textColorHint="#000"
                 android:textColor="#000"
@@ -82,11 +83,11 @@
                 android:layout_marginTop="10dp"
                 android:background="#BEBEBE"/>
 
-<!--            Below is a buttin to conplete the paymentaction-->
+            <!--            Below is a buttin to conplete the paymentaction-->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/pay"
+                android:id="@+id/payment"
                 android:text="PAY NOW"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="70dp"

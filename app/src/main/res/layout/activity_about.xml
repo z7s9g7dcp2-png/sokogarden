@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        app:cardElevation="15dp"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="#F48FB1"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutTxt"
+                android:text="We’re a team driven by curiosity, creativity, and a commitment to doing things the right way. Our goal is simple: to deliver meaningful value through thoughtful solutions that genuinely make a difference. We believe in building strong relationships, staying transparent in everything we do, and continuously improving to meet the evolving needs of the people we serve. Whether you’re here for the first time or have been with us from the start, we’re focused on providing an experience that is reliable, engaging, and worth your trust."
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnListen"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="🎙️ Know Us"
+                android:textSize="23sp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

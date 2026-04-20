@@ -51,15 +51,15 @@ class ProductAdapter(private val productList: List<Product>) :
  
                 //Handle Purchase Button Listener
                 holder.btnPurchase.setOnClickListener {
-//                    val context = holder.itemView.context
-//                    val intent = android.content.Intent(context, PaymentActivity::class.java).apply {
-//                        putExtra("product_id", product.product_id)
-//                        putExtra("product_name", product.product_name)
-//                        putExtra("product_description", product.product_description)
-//                        putExtra("product_cost", product.product_cost)
-//                        putExtra("product_photo", product.product_photo)
-//                    }
-//                    context.startActivity(intent)
+                    val context = holder.itemView.context
+                    val intent = android.content.Intent(context, PaymentActivity::class.java).apply {
+                        putExtra("product_id", product.product_id)
+                        putExtra("product_name", product.product_name)
+                        putExtra("product_description", product.product_description)
+                        putExtra("product_cost", product.product_cost)
+                        putExtra("product_photo", product.product_photo)
+                    }
+                    context.startActivity(intent)
                 }
     }
  
